@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "set NODE_ENV=development&&nodemon backend/server.js",
-    "start": "set NODE_ENV=production&&echo %NODE_ENV% && npm install && npm install --prefix frontend && npm run build --prefix frontend && node backend/server.js"
+    "dev": "set NODE_ENV=development&& nodemon backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "set NODE_ENV=production&& echo %NODE_ENV% && node backend/server.js"
   },
+
   "type": "module",
   "keywords": [],
   "author": "",
