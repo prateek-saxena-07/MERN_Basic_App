@@ -24,7 +24,7 @@ if(process.env.NODE_ENV === "production")
     })
 }
 
-// console.log(process.env.MONGO_URI)
+console.log(process.env.MONGO_URI)
 
 app.listen(PORT, () => {
     connectDB();
